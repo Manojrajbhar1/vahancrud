@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: java-crud
-        image: 192.168.1.4:5000/repository/vahan-docker/java-crud-webapp:9
+        image: 192.168.1.4:5000/repository/vahan-docker/java-crud-webapp:10
         ports:
         - containerPort: 8080
