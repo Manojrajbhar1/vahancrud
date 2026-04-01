@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-crud-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: java-crud
+  template:
+    metadata:
+      labels:
+        app: java-crud
+    spec:
+      containers:
+      - name: java-crud
+        image: 192.168.1.52:5000/vahan/java-crud-webapp:latest
+        ports:
+        - containerPort: 8080
